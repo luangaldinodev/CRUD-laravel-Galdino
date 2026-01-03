@@ -3,23 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Pessoa;
 
 class PessoaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        
-    }
+    public function index() {}
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create($mensagem = "")
     {
-        return view('pessoa.create');
+
+        return view('pessoa.create', ['mensagem' => $mensagem]);
     }
 
     /**
@@ -27,7 +26,28 @@ class PessoaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $regrasDeValidacao = [
+            'nome' => 'required|max:50|min:3',
+            'email' => 'required|email|max:50',
+            'telefone' => 'required|max:15|min:9'
+        ];
+
+        // TODO: Terminar as mensagens de validações, Email e os minimos.
+        $mensagensDeValidacao = [
+            'required' => '*O campo :attribute está vazio!',
+            'nome.max' => '*O campo Nome precisa ter no máximo 50 caracteres!',
+            'email.max' => '*O campo E-mail precisa ter no máximo 50 caracteres!',
+            'telefone.max' => '*O campo E-mail precisa ter no máximo 15 caracteres!',
+            'nome.min' => '*O campo Nome precisa ter no minimo 3 caracteres!',
+            'telefone.min' => '*O campo E-mail precisa ter no minimo 9 caracteres!'
+        ];
+
+        $request->validate($regrasDeValidacao, $mensagensDeValidacao);
+
+        Pessoa::create($request->all());
+
+        return redirect()->route('create.pessoa', ['mensagem' => "sucesso"]);
     }
 
     /**
@@ -43,7 +63,7 @@ class PessoaController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        //retornar view
     }
 
     /**

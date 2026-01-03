@@ -22,12 +22,12 @@
 
     <header class="bg-indigo-950 shadow-lg">
         <nav class="flex items-center justify-between px-6 py-6">
-            <a class="text-white text-2xl font-semibold flex items-center gap-2" href=" {{ route('raiz') }} "><i
+            <a class="text-white text-2xl font-semibold text-shadow-md flex items-center gap-2" href=" {{ route('raiz') }} "><i
                     class="fa-regular fa-user"></i>
                 <h1>CRUD do Galdino</h1>
             </a>
             <ul class="flex items-center justify-between gap-6">
-                <li><a class="text-white font-medium hover:underline" href="">Resgistrar Pessoa</a></li>
+                <li><a class="text-white font-medium hover:underline" href=" {{ route('create.pessoa') }} ">Resgistrar Pessoa</a></li>
                 <li><a class="text-white font-medium hover:underline" href="">Consultar Pessoa</a></li>
                 <li><a class="text-white font-medium hover:underline" href="">Excluir Pessoa</a></li>
             </ul>
