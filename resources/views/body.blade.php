@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{-- Tailwind --}}
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    @vite('resources/css/app.css')
+    {{-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> --}}
     {{-- Icones --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -27,9 +28,9 @@
                 <h1>CRUD do Galdino</h1>
             </a>
             <ul class="flex items-center justify-between gap-6">
-                <li><a class="text-white font-medium hover:underline" href=" {{ route('create.pessoa') }} ">Resgistrar Pessoa</a></li>
+                <li><a class="text-white font-medium hover:underline" href=" {{ route('pessoa.index') }} ">Ver Pessoas</a></li>
+                <li><a class="text-white font-medium hover:underline" href=" {{ route('pessoa.create') }} ">Resgistrar Pessoa</a></li>
                 <li><a class="text-white font-medium hover:underline" href="">Consultar Pessoa</a></li>
-                <li><a class="text-white font-medium hover:underline" href="">Excluir Pessoa</a></li>
             </ul>
         </nav>
     </header>

@@ -4,9 +4,7 @@
 
 # CRUD em Laravel do Galdino
 
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
-
-O projeto em questão foi desenvolvido para a fixação dos conteúdos aprendidos pro mim Luan Galdino, no curso [Desenvolvimento Web Avançado com PHP, Laravel e Vue.JS por Jorge Sant Ana](https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/?couponCode=KEEPLEARNINGBR).
+O projeto em questão foi desenvolvido para a fixação dos conteúdos adquiridos por mim Luan Galdino, no curso [Desenvolvimento Web Avançado com PHP, Laravel e Vue.JS por Jorge Sant Ana](https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/?couponCode=KEEPLEARNINGBR).
 
 
 

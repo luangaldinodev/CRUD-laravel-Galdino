@@ -6,10 +6,10 @@
 @section('body')
 
 
-<section class="bg-linear-to-t from-indigo-0 to-indigo-950 p-1">
-    <form class="w-5xl my-15 mx-auto p-10 bg-indigo-950 rounded-md shadow-lg" action=" {{ route('create.pessoa') }} " method="post">
+<section class="bg-linear-to-t from-indigo-950 to-indigo-0 p-1 min-h-screen">
+    <form class="w-5xl my-15 mx-auto p-10 bg-indigo-950 rounded-md shadow-lg" action=" {{ route('pessoa.store') }} " method="post">
             
-            {!! $mensagem == 'sucesso' ? '<p class="text-green-400 text-xl mb-5">Pessoa resgistrada com sucesso!</p>' : '' !!}
+            {!! $mensagem == 'sucesso.store' ? '<p class="text-green-400 text-xl mb-5">Pessoa resgistrada com sucesso!</p>' : '' !!}
             
             <h2 class="text-3xl text-white font-semibold text-shadow-md mb-5">Registrar Pessoa:</h2>
 
