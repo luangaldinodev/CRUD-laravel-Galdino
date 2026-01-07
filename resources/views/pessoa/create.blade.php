@@ -1,6 +1,6 @@
 @extends('body')
 
-@section('title', 'create')
+@section('title', 'Registrar Pessoa')
 
 
 @section('body')

@@ -37,9 +37,9 @@
                 <tr class="">
                     <th class="px-3 py-3 outline-1 outline-white/10 -outline-offset-1 rounded-tl-md">Nome</th>
                     <th class="px-3 py-3 outline-1 outline-white/10 -outline-offset-1">E-mail</th>
-                    <th class="px-3 py-3 outline-1 outline-white/10 -outline-offset-1 rounded-tr-md">Telefone</th>
-                    <th class="px-3 py-3">Editar</th>
-                    <th class="px-3 py-3">Excluir</th>
+                    <th class="px-3 py-3 outline-1 outline-white/10 -outline-offset-1">Telefone</th>
+                    <th class="px-3 py-3 outline-1 outline-white/10 -outline-offset-1">Editar</th>
+                    <th class="px-3 py-3 outline-1 outline-white/10 -outline-offset-1 rounded-tr-md">Excluir</th>
                 </tr>
                 @foreach ($pessoas as $pessoa)
                     <tr class="">

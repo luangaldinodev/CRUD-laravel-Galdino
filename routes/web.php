@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('raiz');
 
+Route::fallback(function () {
+    return view('fallback');
+});
+
 Route::controller(PessoaController::class)->group(function () {
     
     // Index

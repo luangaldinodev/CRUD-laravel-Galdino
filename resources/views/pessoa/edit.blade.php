@@ -1,6 +1,6 @@
 @extends('body')
 
-@section('title', 'create')
+@section('title', 'Editar Pessoa | '.$pessoa->nome)
 
 
 @section('body')
