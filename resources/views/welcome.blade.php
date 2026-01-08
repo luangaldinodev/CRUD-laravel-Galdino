@@ -21,7 +21,7 @@
 
                 <div data-aos="fade-up" data-aos-duration="850" data-aos-delay="50" data-aos-easing="ease-in-out"
                     data-aos-anchor-placement="top-bottom">
-                    <a href="{{ route('raiz') }} "
+                    <a href="{{ route('docs.index') }} "
                         class="px-8 py-3 mt-6 inline-block shadow-md rounded-sm bg-white/10 hover:bg-white/19 text-white font-medium cursor-pointer hover:-translate-y-1 transition delay-50 duration-300 ease-in-out">Documentação</a>
                 </div>
             </div>

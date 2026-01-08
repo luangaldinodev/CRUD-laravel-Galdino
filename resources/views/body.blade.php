@@ -31,6 +31,7 @@
                 <li><a class="text-white font-medium hover:underline" href=" {{ route('raiz') }} ">Home</a></li>
                 <li><a class="text-white font-medium hover:underline" href=" {{ route('pessoa.index') }} ">Ver Pessoas</a></li>
                 <li><a class="text-white font-medium hover:underline" href=" {{ route('pessoa.create') }} ">Resgistrar Pessoa</a></li>
+                <li><a class="text-white font-medium hover:underline" href=" {{ route('docs.index') }} ">Documentação</a></li>
             </ul>
         </nav>
     </header>

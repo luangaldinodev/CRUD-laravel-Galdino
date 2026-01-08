@@ -25,3 +25,5 @@ Route::controller(PessoaController::class)->group(function () {
     // Destroy
     Route::get('/pessoa/delete/{id}', 'destroy')->name('pessoa.destroy');
 });
+
+Route::view('/docs', 'docs.index')->name('docs.index');
