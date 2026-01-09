@@ -13,7 +13,9 @@ O projeto em questão foi desenvolvido para a fixação dos conteúdos adquirido
 
 **Front-end:** Blade, TailwindCSS, AOS Animate On Scroll Library
 
-**Back-end:** Laravel 12, PHP
+**Back-end:** Laravel 12
+
+**Banco de dados:** MySQL
 
 
 ## Instalação e Rodando localmente
@@ -61,7 +63,7 @@ Rodar as migrations
   php artisan migrate
 ```
 
-(Opcional) Instalar dependências front-end
+Instalar dependências front-end
 
 ```bash
   npm install
@@ -79,6 +81,17 @@ Acesse:
 ```bash
   http://127.0.0.1:8000
 ```
+
+## Documentação Técnica
+
+Acesse a rota:
+
+```bash
+  http://127.0.0.1:8000/docs
+```
+
+Aqui você encontrara todas as rotas disponíveis e uma exibição da estrutura das tabelas do banco de dados.
+
 ## Referência e Documentações
 
  - [Laravel Docs](https://laravel.com/docs/12.x)
